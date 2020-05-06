@@ -13,10 +13,21 @@ function carousel() {
   setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
+
 /******************* */
   var pos=0;
   var speed=250;
-  var str=document.getElementById('str').innerText;
+  var adj=["Electronic","Freelancer","developer","hola", "costeñita soy"];
+//////PREGUNTAR ESTO////////////////////
+  var j=0;
+  
+  newText=adj[j];
+  console.log(newText);
+  
+  document.getElementById('str').innerText=newText;
+  var str=document.getElementById('str').innerText; 
+  
+  
   
   document.getElementById('str').innerText='';
 
@@ -43,5 +54,12 @@ function carousel() {
       setTimeout(erase,speed);
 
     }
+    else{
+      j++ ;
+      j = j % adj.length;
+      str=adj[j];
+      console.log(str);      
+      document.getElementById('str').text=str;
+      setTimeout(type,speed);
+    }
   }
-
