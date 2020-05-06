@@ -1,0 +1,129 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Dosis', sans-serif;
+   color: white;
+
+}
+body{
+
+   font-size: 20px;
+   margin: 0px;
+
+}
+
+a{
+
+   text-decoration: none;
+}
+ul{
+   list-style: none; /*le quita el estilo predeterminado a la lista*/
+}
+.container{
+
+   width: 100%;
+   margin:auto;
+   position: fixed;
+   padding: 0px 20px;
+
+}
+
+.nav-main{
+
+   margin: 10px;
+   font-size: 20px;
+   display: flex; /*para que queden uno al lado del otro*/
+   justify-content: space-between; /*justificar al centro*/
+   align-items: center;
+   height: 60px;
+   padding: 20px 0;
+
+
+}
+.nav-main ul {
+   display: flex;
+   flex-direction:row;
+   margin-left:20px;
+   align-items: right;
+   
+
+}
+.nav-main ul li{
+   padding: 10px;
+}
+.nav-main ul a:hover{
+   border-bottom: 2px solid white;
+   color: rgb(45, 141, 219);
+}
+.home:hover{
+   transform: scale(1.25);
+
+   
+}
+.nav-main ul a{
+   padding: 6px;
+}
+.container hr{
+   color: dimgray;
+   border-color: black;
+   line-height: 1px;
+}
+
+.center{
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 4em 0em 2em 25em;
+}
+.center img{
+   border-radius: 50%;
+   height: 40vh;
+   border: white solid 3px;
+   margin: 1em;
+}
+
+.text{
+      font-size: 40px;
+      color: #fff;
+      font-weight: bold;
+  /*    display: block;*/
+      width: 100%;
+      top: 10%;
+      text-align: center;
+  }
+  .icons {
+     margin: 1em;
+  }
+  .icons a i{
+     margin: 2px;
+  }
+  .icons a i:hover{
+     color:rgb(45, 141, 219);
+  }
+
+  .hexagon span {
+   position: absolute;
+   display: block;
+   border-left: 100px solid #fff;
+   border-right: 100px solid #fff;
+   width: 200px;
+   float:left;
+}
+.top {
+   top: 0;
+   border-bottom: 173px solid transparent;
+}
+.bottom{
+   bottom: 0;
+   border-top: 173px solid transparent;
+}
+.hexagon {
+   background: url("model.JPG");
+   width: 400px;
+   height: 295px;
+   position: relative;
+   display: inline-block;
+}
