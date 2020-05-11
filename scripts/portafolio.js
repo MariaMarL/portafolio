@@ -16,13 +16,12 @@ function carousel() {
 
 /******************* */
   var pos=0;
-  var speed=250;
-  var adj=["Electronic","Freelancer","developer","hola", "costeñita soy"];
+  var speed=200;
+  var adj=["Electronic","Freelancer","developer"];
 //////PREGUNTAR ESTO////////////////////
   var j=0;
   
   newText=adj[j];
-  console.log(newText);
   
   document.getElementById('str').innerText=newText;
   var str=document.getElementById('str').innerText; 
@@ -57,8 +56,7 @@ function carousel() {
     else{
       j++ ;
       j = j % adj.length;
-      str=adj[j];
-      console.log(str);      
+      str=adj[j];   
       document.getElementById('str').text=str;
       setTimeout(type,speed);
     }

@@ -4,6 +4,7 @@
    padding: 0;
    font-family: 'Dosis', sans-serif;
    color: white;
+   
 
 }
 body{
@@ -22,23 +23,25 @@ ul{
 }
 .container{
 
-   width: 100%;
-   height: 10vh;
-   margin:auto;
-   position: fixed;
-   padding: 0px 20px;
+   width: 100vw;
+   height: 38vh;
+  /* margin:auto;
+   padding: 0px 20px;  */
+   color: white;
+
 
 }
 
 .nav-main{
 
-   margin: 10px;
-   font-size: 20px;
+   margin: 0px;
+   font-size: 25px;
    display: flex; /*para que queden uno al lado del otro*/
    justify-content: space-between; /*justificar al centro*/
    align-items: center;
-   height: 60px;
-   padding: 20px 0;
+   height: 2em;
+   padding: 20px 0px 0px 50px;
+   width: 100%;
 
 
 }
@@ -47,7 +50,12 @@ ul{
    flex-direction:row;
    margin-left:20px;
    align-items: right;
+
    
+
+}
+hr{
+   width: 100vw;
 
 }
 .nav-main ul li{
@@ -65,11 +73,7 @@ ul{
 .nav-main ul a{
    padding: 6px;
 }
-.container hr{
-   color: dimgray;
-   border-color: black;
-   line-height: 1px;
-}
+
 
 .center{
    position: absolute;
@@ -77,12 +81,28 @@ ul{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin: 4em 0em 2em 25em;
+   margin: 6em 0em 5em 25em;
+
 }
-.portafolio{
-   background-color: indianred;
+
+.about{
+   background: radial-gradient(gray, rgb(43, 42, 42));
+   /* background-color: rgba(122, 120, 120, 0.5);  */
+   padding: 2em 2em 2em 3em;
    width: 100%;
-   height: 500pxx;
+   height: 100vh;
+   font-size: 25px;
+   color: tomato;
+   
+
+}
+.aboutArriba{
+   display: flex;
+   justify-content: space-between;
+}
+.aboutArriba h2{
+   font-size: 45px;
+   margin: 15px;
 }
 .center img{
    border-radius: 50%;
@@ -110,11 +130,80 @@ ul{
      color:rgb(45, 141, 219);
   }
 
- .potafolio{
-    background-color: gray;
-    width: 100%;
-    height: 100%;
- }
+.portafolio{
+   background-color: white;
+   /* width: 100%;
+   height: 100vh; */
+   box-sizing: content-box;
+   padding: 1em 2em;
+}
+.portafolio h2{
+   font-size: 35px;
+   color: black;
+   margin: 30px;
+   border-bottom: 2px black solid;
+}
+.portafolio p{
+   font-size: 25px;
+   margin: 0 1em 1em 1em;
+   color: black;
+}
+.slides{
+   margin: 1em 5em;
+   justify-content: center;
+   text-align: center;
+   border: 2px black solid;
+   border-radius: 1%;
+   padding: 2em 0em;
+}
+.slidesA .slide1 img,
+.slidesA .slide2 img,
+.slidesA .slide3 img,
+.slidesB .slide1 img,
+.slidesB .slide2 img,
+.slidesB .slide3 img,
+.slidesC .slide1 img,
+.slidesC .slide2 img,
+.slidesC .slide3 img {
+   width: 280px;
+   height: 200px;
+   border-radius: 15px;
+   border: 1px black solid;
+   display: flex;
+   flex-direction: column;
+   margin: 15px;
+
+}
+.slidesA,
+.slidesB,
+.slidesC{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center;
+}
+.slidesA .slide1 img:hover,
+.slidesA .slide2 img:hover,
+.slidesA .slide3 img:hover,
+.slidesB .slide1 img:hover,
+.slidesB .slide2 img:hover,
+.slidesB .slide3 img:hover,
+.slidesC .slide1 img:hover,
+.slidesC .slide2 img:hover,
+.slidesC .slide3 img:hover{
+opacity: .5;
+background-color: blueviolet;
+}
+
+
+.div-img:hover{
+
+ transform:scale(1.2); 
+ transition: all .7s;
+       
+   
+   
+}
 
 .flip-card {
    background-color: transparent;
@@ -155,3 +244,10 @@ ul{
    color: white;
    transform: rotateY(180deg);
  }
+
+ /*#container{
+    display: flex;
+    flex-direction: column;
+ } */
+
+
