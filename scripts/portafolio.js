@@ -61,3 +61,4 @@ function carousel() {
       setTimeout(type,speed);
     }
   }
+  
