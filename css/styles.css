@@ -24,7 +24,7 @@ ul{
 .container{
 
    width: 100vw;
-   height: 38vh;
+   height: 90%;
   /* margin:auto;
    padding: 0px 20px;  */
    color: white;
@@ -81,28 +81,8 @@ hr{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin: 6em 0em 5em 25em;
+   margin: 5em 0em 5em 25em;
 
-}
-
-.about{
-   background: radial-gradient(gray, rgb(43, 42, 42));
-   /* background-color: rgba(122, 120, 120, 0.5);  */
-   padding: 2em 2em 2em 3em;
-   width: 100%;
-   height: 100vh;
-   font-size: 25px;
-   color: tomato;
-   
-
-}
-.aboutArriba{
-   display: flex;
-   justify-content: space-between;
-}
-.aboutArriba h2{
-   font-size: 45px;
-   margin: 15px;
 }
 .center img{
    border-radius: 50%;
@@ -110,32 +90,286 @@ hr{
    border: white solid 3px;
    margin: 1em;
 }
-
 .text{
-      font-size: 30px;
-      color: #fff;
-      font-weight: bold;
-  /*    display: block;*/
-      width: 100%;
-      top: 10%;
-      text-align: center;
-  }
-  .icons {
-     margin: 1em;
-  }
-  .icons a i{
-     margin: 2px;
-  }
-  .icons a i:hover{
-     color:rgb(45, 141, 219);
-  }
+   font-size: 30px;
+   color: #fff;
+   font-weight: bold;
+/*    display: block;*/
+   width: 100%;
+   top: 10%;
+   text-align: center;
+}
+.icons {
+  margin: 1em;
+}
+.icons a i{
+  margin: 2px;
+}
+.icons a i:hover{
+  color:rgb(45, 141, 219);
+}
 
+/************************/
+/*******ABOUT ME*********/
+/************************/
+
+.about{
+   background:white;
+   /* background-color: rgba(122, 120, 120, 0.5);  */
+   padding: 2em 2em 2em 3em;
+   width: 100%;
+   height: 140vh;
+   font-size: 25px; 
+   margin: 0em;
+
+}
+
+.aboutArriba{
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0 5em;
+}
+.aboutArriba #aboutText{
+   width: 40%;
+}
+.aboutArriba .progress_bar{
+   width: 50%;
+   background-color: white;
+   color: black;
+   list-style: none;
+   padding: 0;
+   font-family: sans-serif;
+}
+#text_black h1{
+   color:#173b6c;
+   font-size: 25px;
+}
+#text_black h3{
+   color: black;
+   font-size: 20px;
+}  
+.aboutArriba h2{
+   margin: 0;
+}
+
+.about p{
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   text-align: left;
+
+}
+
+/*****************************/
+ /******PROGRESS BAR***********/
+ /*****************************/
+
+ .skills{
+   width: 400px;
+   margin: 0 0 30px 0;
+   color: white;
+
+}
+.skills li{
+   margin: 10px 0 0px 0;
+}
+.bar{
+   background-color: #ced1d6;
+   display: block;
+   height: 5px;
+   border: 1px solid rgba(0,0,0,0.3);
+   border-radius: 3px;
+   /*overflow: hidden; */
+   /*box-shadow: 0 0 10px #2187e7b3; */
+
+
+}
+.bar span{
+   height: 2px;
+   float: left;
+   background-color:rgb(226, 21, 90) ;
+
+}
+.htmla{
+   width: 90%;
+   animation: html 3s;
+}
+.CSSa{
+   width:80% ;
+   animation: CSS 3s;
+}
+.JAVASCRIPTa{
+   width: 50%;
+   animation: JAVASCRIPT 3s;
+}
+.JQUERYa{
+width: 30%;
+animation: JQUERY 3s;
+
+}
+.cppa{
+   width: 80%;
+   animation: cppa 3s;
+}
+.matlab{
+   width: 80%;
+   animation: matlab 3s;
+}
+.python{
+   width: 65%;
+   animation: python 3s;
+}
+.pv{
+   width: 90%;
+   animation: pv 3s;
+}
+@keyframes html{
+   0%{
+       width: 0%;
+   }100%{
+       width: 90%;
+   }
+
+}
+
+@keyframes CSS{
+   0%{
+       width: 0%;
+   }100%{
+       width: 80%;
+   }
+
+}
+
+@keyframes JAVASCRIPT{
+   0%{
+       width: 0%;
+   }100%{
+       width: 50%;
+   }
+
+}
+
+@keyframes JQUERY{
+   0%{
+       width: 0%;
+   }100%{
+       width: 30%;
+   }
+
+}
+@keyframes cppa{
+   0%{
+       width: 0%;
+   }100%{
+       width: 80%;
+   }
+
+}
+@keyframes matlab{
+   0%{
+       width: 0%;
+   }100%{
+       width: 80%;
+   }
+
+}
+@keyframes python{
+   0%{
+       width: 0%;
+   }100%{
+       width: 65%;
+   }
+
+}
+@keyframes pv{
+   0%{
+       width: 0%;
+   }100%{
+       width: 90%;
+   }
+
+}
+/*********************************/
+/***********RESUME ***********/
+/*********************************/
+  .resume{
+     background-color:white;
+     color: gray;
+     padding: 6em;
+     justify-content: space-between;
+  }
+  .resume h2 p{
+     color: gray;
+  }
+  .contentResume{
+     display: flex;
+
+  }
+  .resume_left,
+  .resume_right{
+     width: 48%;
+  }
+  .description,
+  .school,
+  .college,
+  .profExp,
+  .profExp2{
+     padding: 1em;
+     border-left: 2px blue solid;
+  }
+.contentResume .title1{
+   font-size: 26px;
+   font-weight: 700;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   color: #050d18;
+}
+.contentResume .title2{
+   line-height: 18px;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: uppercase;
+   color:#050d18 ;
+   margin-bottom: 10px;
+
+}
+.MainTitle{
+   font-size: 32px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   color: #173b6c;
+}
+.resume p,
+.resume ul li{
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   text-align: left;
+}
+.resume .year{
+   font-size: 16px;
+   background: #e4edf9;
+   padding: 5px 15px;
+   display: inline-block;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+/*********************************/
+/***********PORTAFOLIO ***********/
+/*********************************/
 .portafolio{
    background-color: white;
    /* width: 100%;
    height: 100vh; */
    box-sizing: content-box;
-   padding: 1em 2em;
+   padding: 2em 4em;
 }
 .portafolio h2{
    font-size: 35px;
@@ -149,7 +383,7 @@ hr{
    color: black;
 }
 .slides{
-   margin: 1em 5em;
+   margin: 1em 3em;
    justify-content: center;
    text-align: center;
    border: 2px black solid;
@@ -182,39 +416,30 @@ hr{
    justify-content: center;
    text-align: center;
 }
-.slidesA .slide1 img:hover,
-.slidesA .slide2 img:hover,
-.slidesA .slide3 img:hover,
-.slidesB .slide1 img:hover,
-.slidesB .slide2 img:hover,
-.slidesB .slide3 img:hover,
-.slidesC .slide1 img:hover,
-.slidesC .slide2 img:hover,
-.slidesC .slide3 img:hover{
-opacity: .5;
-background-color: blueviolet;
-}
-
 
 .div-img:hover{
-
- transform:scale(1.2); 
- transition: all .7s;
+opacity: .5;
+transform:scale(1.2); 
+transition: all .7s;
        
    
    
 }
-
+/*********************************/
+/***********CONTACT ME ***********/
+/*********************************/
 .iconsc{
    color: rgb(194, 15, 45);
 }
 .contact{
    display: flex;
    justify-content: space-between;
-   margin: 4em 10em;
+   margin: 4em 6em;
       
 }
-
+.contact_left h2 p{
+   margin: 30px;
+}
 .sects{
    display: flex;
    flex-direction: column;
@@ -251,9 +476,20 @@ input[type=input]:focus{
    border-radius: 20px;
 
 }
+.sects input[type=submit]:hover{
+   opacity: 0.7;
+}
 
-
-
+/*************************/
+/********FOOTER***********/
+/*************************/
+footer{
+   width: 100%;
+   height: 4em;
+   justify-content: center;
+   text-align: center;
+   background-color: gray;
+}
 
 
 .flip-card {
@@ -286,7 +522,7 @@ input[type=input]:focus{
  }
  
  .flip-card-front {
-   background-color: #bbb;
+   background-color:transparent;
    color: black;
  }
  
@@ -306,4 +542,4 @@ input[type=input]:focus{
     flex-direction: column;
  } */
 
-
+ 

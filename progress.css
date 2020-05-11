@@ -1,0 +1,87 @@
+*{
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+}
+.skills{
+    width: 300px;
+    margin: 50px;
+    color: white;
+
+}
+.skills li{
+    margin: 20px 0;
+}
+.bar{
+    background-color: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+
+
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background-color:green ;
+
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.CSS{
+    width:65% ;
+    animation: CSS 2s;
+}
+.JAVASCRIPT{
+    width: 50%;
+    animation: JAVASCRIPT 2s;
+}
+.JQUERY{
+width: 65%;
+animation: JQUERY 2s;
+
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+
+}
+
+@keyframes CSS{
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+
+}
+
+@keyframes JAVASCRIPT{
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+
+}
+
+@keyframes JQUERY{
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+
+}

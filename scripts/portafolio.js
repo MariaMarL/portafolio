@@ -17,7 +17,7 @@ function carousel() {
 /******************* */
   var pos=0;
   var speed=200;
-  var adj=["Electronic","Freelancer","developer"];
+  var adj=["Electronic","Freelancer","developer", "Solar Designer"];
 //////PREGUNTAR ESTO////////////////////
   var j=0;
   
@@ -62,3 +62,4 @@ function carousel() {
     }
   }
   
+  //////Aparece Scroll///
